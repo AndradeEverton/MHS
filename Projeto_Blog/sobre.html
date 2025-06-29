@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - Manual do Ufraniano Sofrido</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar padronizada -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Manual do Ufraniano Sofrido</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="index.html"><i class="fas fa-home me-1"></i>Início</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="postagens.html"><i class="fas fa-newspaper me-1"></i>Postagens</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold active" href="sobre.html"><i class="fas fa-info-circle me-1"></i>Sobre</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contato.html"><i class="fas fa-envelope me-1"></i>Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <section class="mb-5">
+      <h1 class="mb-3">Sobre o Blog</h1>
+      <p>
+        O <strong>Manual do Ufraniano Sofrido</strong> é um projeto acadêmico com alma e bom humor, feito para estudantes da UFRA que vivem o cotidiano universitário na pele. Compartilhamos dicas de estudo, ferramentas úteis, histórias engraçadas e momentos de superação que fazem parte da vida acadêmica.
+      </p>
+      <p>
+        Seja para rir ou aprender, este espaço foi feito com carinho por alunos que entendem o que é ser um verdadeiro Ufraniano Sofrido.
+      </p>
+    </section>
+
+    <!-- Biografia -->
+    <section class="mb-5">
+      <h2 class="mb-3">Quem Somos?</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><i class="fas fa-user me-2 text-secondary"></i>Everton Thiago</li>
+            <li><i class="fas fa-user me-2 text-secondary"></i>Felipe Barbosa</li>
+            <li><i class="fas fa-user me-2 text-secondary"></i>Leticia Cordeiro</li>
+            <li><i class="fas fa-user me-2 text-secondary"></i>Roger Muryel</li>
+          </ul>
+          <p>Estudantes de Sistemas de Informação apaixonados por tecnologia. Garotos e garota que programam.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Equipe Ufraniana Sofrida</h5>
+          <p>Grupo de colegas que contribuiu com ideias, memes, sugestões e apoio moral durante as longas madrugadas de construção desse projeto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section>
+      <h2 class="mb-3">Entre em Contato</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Ex: seuemail@gmail.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Manual do Ufraniano Sofrido. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual do Ufraniano Sofrido</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Estilo  -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Manual do Ufraniano Sofrido</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">
+                            <i class="fas fa-home me-1"></i> Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="postagens.html">
+                            <i class="fas fa-newspaper me-1"></i> Postagens
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="sobre.html">
+                            <i class="fas fa-info-circle me-1"></i> Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contato.html">
+                            <i class="fas fa-envelope me-1"></i> Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-black text-center py-5" style="background-color: #fdf6e3;">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold mb-3">Manual do Ufraniano Sofrido</h1>
+            <p class="lead mb-4">Aqui a gente aprende, rala e sobrevive juntos!</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#postagens" class="btn btn-primary btn-md px-4">
+                    <i class="fas fa-arrow-down me-2"></i>Ver Postagens
+                </a>
+                <a href="sobre.html" class="btn btn-outline-dark btn-md px-4">
+                    <i class="fas fa-users me-2"></i>Conheça-nos
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <!-- Postagens -->
+    <main class="container my-5" id="postagens">
+        <h2 class="text-center mb-5 display-5 fw-semibold">Postagens em destaque</h2>
+        <div class="container-fluid px-0">
+            <div class="row flex-nowrap overflow-auto pb-3 row-cards" style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+                <!-- Postagem 1 -->
+                <div class="col-10 col-sm-6 col-md-4 col-lg-3 pb-3 px-2" style="scroll-snap-align: start;">
+                    <div class="card h-100 rounded">
+                        <img src="imagens/post1.jpeg" loading="lazy" class="card-img-top rounded-top" alt="Estudante concentrado estudando antes da prova" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-secondary">Estudos</span>
+                                <small class="text-muted">15/06/2025</small>
+                            </div>
+                            <h5 class="card-title">Como estudar antes da prova em 1 dia</h5>
+                            <p class="card-text flex-grow-1">Dicas rápidas pra salvar seu semestre. Testado em situações desesperadoras.</p>
+                            <a href="posts/post1.html" class="btn btn-primary mt-auto">
+                                <i class="fas fa-book-open me-1"></i>Ler mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postagem 2 -->
+                <div class="col-10 col-sm-6 col-md-4 col-lg-3 pb-3 px-2" style="scroll-snap-align: start;">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="imagens/post2.jpeg" loading="lazy" class="card-img-top" alt="Como fazer cronograma" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-secondary">Organização</span>
+                                <small class="text-muted">10/06/2025</small>
+                            </div>
+                            <h5 class="card-title">Como fazer um cronograma e ignorar ele em 24h</h5>
+                            <p class="card-text flex-grow-1">Organização é tudo, menos prática. Guia definitivo para procrastinadores.</p>
+                            <a href="posts/post2.html" class="btn btn-primary mt-auto">
+                                <i class="fas fa-book-open me-1"></i>Ler mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postagem 3 -->
+                <div class="col-10 col-sm-6 col-md-4 col-lg-3 pb-3 px-2" style="scroll-snap-align: start;">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="imagens/post3.jpeg" loading="lazy" class="card-img-top" alt="Aula ótima até abrir os olhos" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-secondary">Humor</span>
+                                <small class="text-muted">05/06/2025</small>
+                            </div>
+                            <h5 class="card-title">A aula tava ótima... até eu abrir os olhos</h5>
+                            <p class="card-text flex-grow-1">O sono vence mais uma vez. Relatos de batalhas épicas contra o cochilo em sala.</p>
+                            <a href="posts/post3.html" class="btn btn-primary mt-auto">
+                                <i class="fas fa-book-open me-1"></i>Ler mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postagem 4 -->
+                <div class="col-10 col-sm-6 col-md-4 col-lg-3 pb-3 px-2" style="scroll-snap-align: start;">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="imagens/post4.jpeg" loading="lazy" class="card-img-top" alt="Professor fala para ler material" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-secondary">Desabafo</span>
+                                <small class="text-muted">01/06/2025</small>
+                            </div>
+                            <h5 class="card-title">Quando o professor fala "é só ler o material"</h5>
+                            <p class="card-text flex-grow-1">83 slides, 0 vontade. A arte de fingir que está acompanhando.</p>
+                            <a href="posts/post4.html" class="btn btn-primary mt-auto">
+                                <i class="fas fa-book-open me-1"></i>Ler mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postagem 5 -->
+                <div class="col-10 col-sm-6 col-md-4 col-lg-3 pb-3 px-2" style="scroll-snap-align: start;">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="imagens/post5.jpeg" loading="lazy" class="card-img-top" alt="Wi-Fi sumido" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-secondary">Cotidiano</span>
+                                <small class="text-muted">28/06/2025</small>
+                            </div>
+                            <h5 class="card-title">Wi-Fi: conectado, mas sem internet</h5>
+                            <p class="card-text flex-grow-1">A lenda do sinal que aparece só quando você já desistiu. Faculdade ou floresta?</p>
+                            <a href="posts/post5.html" class="btn btn-primary mt-auto">
+                                <i class="fas fa-book-open me-1"></i>Ler mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- FIM do .row flex-nowrap -->
+        </div>
+
+        <!-- Destaques da semana -->
+        <h2 class="text-dark fw-bold fs-5 px-3 pb-2 pt-4 text-center">Destaques da semana!</h2>
+        <div class="bg-light p-3 rounded">
+            <div class="row">
+                <!-- Item 1 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/transporte.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            🚌
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Transporte público</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">Alunos Ufranianos se divertem em ônibus lotado!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/agrarias.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            👩‍🌾
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Qual melhor curso de agrárias?</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">Cientistas (alunos) afirmam que o melhor curso é...</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/cadernos.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            📓
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Cadernos: Obrigatórios ou não?</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">Ufranianos discutem a importância do caderno na universidade</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/wifi.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            📶
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Wi-Fi da universidade</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">Por que o sinal some quando você mais precisa?</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/restaurante.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            🍽️
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Restaurante universitário</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">O mistério do frango que muda de cor</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/musica.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            🎶
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Música para estudar</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">Playlist para quando você precisa se concentrar</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/cochilo.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            😴
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Cochilo estratégico</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">Como dormir 10 minutos e acordar renovado</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/biblioteca.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            📚
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Biblioteca vazia</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">Os melhores cantos para estudar (ou dormir)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/lanchonete.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            🥪
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Lanchonete do campus</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">O mistério do sanduíche que custa R$ 12,50</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="col-12 col-sm-6 mb-3">
+                    <a href="destaques_sem/professores.html" class="destaque-item d-flex align-items-center gap-3 p-2 bg-white rounded text-decoration-none">
+                        <div class="emoji-container d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                            👨‍🏫
+                        </div>
+                        <div>
+                            <p class="mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;">Linguagem dos professores</p>
+                            <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;">O que realmente significam aquelas frases clássicas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Manual do Ufraniano</h5>
+                    <p class="small">O guia definitivo para sobreviver à vida universitária com um mínimo de sanidade.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="postagens.html" class="text-white text-decoration-none">Postagens</a></li>
+                        <li class="mb-2"><a href="sobre.html" class="text-white text-decoration-none">Sobre</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Redes Sociais</h5>
+                    <div class="social-icons d-flex justify-content-center justify-content-md-start">
+                        <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3 text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3 text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 opacity-100">
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2025 Manual do Ufraniano Sofrido. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Popper + Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

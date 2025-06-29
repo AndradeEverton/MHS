@@ -1,0 +1,195 @@
+/* Garante que todas as imagens dos cards tenham a mesma altura */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+.post-header img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; /* mostra tudo, mas pode deixar fundo */
+    background-color: #fdf6e3; /* cor do fundo da página */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+/* Faz com que os cards tenham altura igual */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+}
+
+/* Melhora o scroll horizontal */
+.row.flex-nowrap {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+/* Estiliza a scrollbar para navegadores WebKit */
+.row.flex-nowrap::-webkit-scrollbar {
+    height: 8px;
+}
+
+.row.flex-nowrap::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.row.flex-nowrap::-webkit-scrollbar-thumb {
+    background: #a39369;
+    border-radius: 4px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    bakground-color: #fdf6e3;
+    color: #333;
+    }
+
+    .navbar {
+    background-color:#a39369;
+    }
+
+    .nav-link i {
+    margin-right: 5px;
+    }
+
+    footer {
+    background-color: #a39369;
+    }
+
+    .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    }
+
+    .social-icons a:hover {
+    color: #f8f9fa;
+    }
+    .imagem-post-wrapper {
+    background-color: #fae9c0;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.imagem-post-wrapper img {
+max-width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 15px;
+}
+/* css/style.css */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: #f7ecd0;
+    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+}
+
+/* Efeito hover SUPER sutil - apenas cor */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none;
+    transition: background-color 0.3s ease;
+    background-color: #f7ecd0; /* Cor base */
+}
+
+.card:hover {
+    background-color: #f3dfab; /* Cor levemente mais escura/quente */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: transparent; /* Herda a cor do card */
+    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+}
+
+/* Para os destaques da semana */
+.destaque-item {
+    transition: background-color 0.3s ease;
+}
+
+.destaque-item:hover {
+    background-color: #f5ebd4 !important;
+}
+.card {
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: rgba(0,0,0,0.1);
+}
+
+/* Efeito hover para destaques - versão minimalista */
+.destaque-item {
+    transition: background-color 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.destaque-item:hover {
+    background-color: #f8f5ed;
+    border-color: #e0d6b7;
+}
+
+.emoji-container {
+    transition: background-color 0.2s ease;
+}
+
+.destaque-item:hover .emoji-container {
+    background-color: #5a6268 !important; /* Cor mais escura no hover */
+}
+/* Estilo para os destaques da semana */
+.destaque-item {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.destaque-item:hover {
+    background-color: #f8f5ed;
+    border-color: #e0d6b7;
+}
+
+.emoji-container {
+    transition: all 0.3s ease;
+    width: 48px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.destaque-item:hover .emoji-container {
+    background-color: #5a6268 !important;
+}
